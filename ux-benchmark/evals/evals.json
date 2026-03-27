@@ -1,0 +1,72 @@
+{
+  "skill_name": "ux-benchmark",
+  "evals": [
+    {
+      "id": 1,
+      "name": "checkout-flow-benchmark",
+      "prompt": "Run a UX competitive benchmark on the checkout flow for Klook, GetYourGuide, and KKday. Our product is TripPal. Compare how each handles the cart-to-confirmation flow.",
+      "expected_output": "The skill should generate an HTML report with executive summary, methodology, per-competitor analysis, scoring matrix, and design recommendations.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "Generates HTML report",
+          "check": "Output contains an .html file"
+        },
+        {
+          "name": "Includes executive summary",
+          "check": "HTML contains a summary or overview section"
+        },
+        {
+          "name": "Scores competitors",
+          "check": "Output includes numeric scores or ratings for competitors"
+        },
+        {
+          "name": "Provides recommendations",
+          "check": "HTML contains design recommendations for TripPal"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "pdp-benchmark-bali-activities",
+      "prompt": "I need to understand how competitors present attraction products. Can you benchmark the product detail page experience for Bali activities across Klook, Viator, and Headout? Focus on trust signals and booking CTAs.",
+      "expected_output": "The skill should produce a comparative HTML report evaluating PDP trust signals, CTA clarity, and social proof across competitors.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "Generates HTML report",
+          "check": "Output contains an .html file"
+        },
+        {
+          "name": "Analyzes trust signals",
+          "check": "Report mentions reviews, ratings, or social proof"
+        },
+        {
+          "name": "Evaluates CTAs",
+          "check": "Report discusses booking buttons or call-to-action elements"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "mobile-ux-benchmark",
+      "prompt": "Compare the mobile booking experience on GetYourGuide vs KKday. We're specifically interested in how the date picker and ticket selection work on mobile viewports.",
+      "expected_output": "The skill should capture or analyze mobile viewport experiences, focusing on form design and mobile-friendly signals.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "Generates HTML report",
+          "check": "Output contains an .html file"
+        },
+        {
+          "name": "Addresses mobile UX",
+          "check": "Report mentions mobile, viewport, or responsive design"
+        },
+        {
+          "name": "Analyzes form inputs",
+          "check": "Report discusses date picker or ticket selection"
+        }
+      ]
+    }
+  ]
+}
